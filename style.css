@@ -1,7 +1,10 @@
 .body{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     background-color: #f6f6f8;
     color: black;
     text-align: center;
+}
+#onScreenCost{
+    margin-top: 50px;
 }
