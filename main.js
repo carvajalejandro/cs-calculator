@@ -17,6 +17,6 @@ function claculation(){
   let final= addCost.toFixed(2)
   document.getElementById("onScreenCost").textContent = `$${final} `;
   document.getElementById("onScreenCost").style.fontSize = "50px";
-  document.getElementById("taxReminder").textContent = 'Remember this does not include Potential Tax!';
+  document.getElementById("taxReminder").textContent = 'Please note this amount does not factor in state sales tax!';
   document.getElementById("taxReminder").style.fontSize = "50px";
 }
