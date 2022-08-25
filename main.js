@@ -14,7 +14,8 @@ function claculation(){
   let totalDays = Math.ceil(difference / (1000 * 3600 * 24)); 
   let dayilyCost= annualPrice/356;
   let addCost= totalDays * dayilyCost;
-  document.getElementById("onScreenCost").textContent = `$${addCost} `;
+  let final= addCost.toFixed(2)
+  document.getElementById("onScreenCost").textContent = `$${final} `;
   document.getElementById("onScreenCost").style.fontSize = "50px";
   document.getElementById("taxReminder").textContent = 'Remember this does not Potential Tax!';
   document.getElementById("taxReminder").style.fontSize = "50px";
