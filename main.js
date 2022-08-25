@@ -7,7 +7,6 @@
 
 const getValueInput = () =>{
 claculation();
-
 }
 
 function claculation(){
@@ -19,7 +18,6 @@ function claculation(){
   let difference = date_2.getTime() - date_1.getTime();
   let totalDays = Math.ceil(difference / (1000 * 3600 * 24)); 
   let dayilyCost= annualPrice/356;
-  let renewalCost= totalDays * dayilyCost;
-  console.log(renewalCost);
-  return (renewalCost);
+  let addCost= totalDays * dayilyCost;
+  document.getElementById("addCost").innerHTML = `$${addCost}`;
 }
