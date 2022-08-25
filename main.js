@@ -1,4 +1,6 @@
 //Create variables that take the date data from the user input
+let inputValue1; 
+let inputValue2; 
 //then asign those dates to the code we got from the internet
 //Put the entire code into a function 
 //Create a button that causes the functions to run
@@ -10,11 +12,13 @@ const getValueInput = () =>{
   let inputValue2 = document.getElementById("renewalDate").value; 
   console.log(inputValue1);
   console.log(inputValue2);
+  
   return (inputValue1, inputValue2);
 }
+  
 
-// let date_1 = new Date('10/25/2021');
-// let date_2 = new Date();
+let date_1 = new Date(`${inputValue1}`);
+let date_2 = new Date(`${inputValue2}`);
 
 // const days = (date_1, date_2) =>{
 //     let difference = date_1.getTime() - date_2.getTime();
