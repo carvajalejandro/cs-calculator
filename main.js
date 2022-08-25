@@ -19,5 +19,6 @@ function claculation(){
   let totalDays = Math.ceil(difference / (1000 * 3600 * 24)); 
   let dayilyCost= annualPrice/356;
   let addCost= totalDays * dayilyCost;
-  document.getElementById("addCost").innerHTML = `$${addCost}`;
+  document.getElementById("addCost").textContent = `$${addCost}`;
+
 }
